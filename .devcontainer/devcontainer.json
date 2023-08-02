@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/ansible:": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "pip install --user ansible-lint"
+}

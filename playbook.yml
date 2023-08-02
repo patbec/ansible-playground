@@ -1,0 +1,12 @@
+---
+- name: Playground
+  hosts: localhost
+  gather_facts: false
+  become: true
+  tasks:
+    - name: "Test"
+      ansible.builtin.debug:
+        msg: "Test"
+
+    - name: "Include Task"
+      ansible.builtin.include_tasks: "tasks/subtask.yml"
